@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+    사용자가 입력한 값들을 다른 곳으로 전달하기 위해서
+    form 태그가 반드시 필요합니다.
+    action: 전송할 정보를 처리할 페이지의 URL
+    -->
+    <form action="#" autocomplete="off">
+        <!-- name을 통해서 추후에 서버 내부에서 해당 입력값을 지목할 수 있다. -->
+        아이디: <input type="text" name="id" value="메롱메롱" readonly> <br>
+        비밀번호: <input type="password" name="pw" required> <br>
+
+        # 성별 <br>
+        <!-- radio를 사용할 때는 name을 동일하게 적어야 함 (중복체크 안할 때) 
+            - value를 입력해야 나중에 저장된 값을 불러올 때 구분이 가능하다-->
+        <input type="radio" name="gender" value="male"> 남
+        <input type="radio" name="gender" value="female"> 여 <br>
+
+        # 취미 <br>
+        <!-- checkbox를 사용할 때도 name을 동일하게 적어야 함 (중복체크 가능)
+            - value를 입력해야 나중에 저장된 값을 불러올 때 구분이 가능하다 -->
+        <input type="checkbox" name="hobby" value="read"> 독서
+        <input type="checkbox" name="hobby" value="sleep"> 수면
+        <input type="checkbox" name="hobby" value="soccer"> 축구
+        <input type="checkbox" name="hobby" value="game"> 게임 <br>
+
+        # 자기소개 <br>
+        <textarea name="introduce" cols="30" rows="10"></textarea> <br>
+
+        <input type="email" name="mail" placeholder="이메일을 입력하세요."> <br>
+
+        <!-- placeholder: 값을 입력하기 전 가이드 라인을 제공하는 타입 -->
+        <input type="number" name="age" min="1" max="200" placeholder="나이를 입력하세요."> <br>
+
+        <!-- range: 범위를 지정하는 타입 -->
+        <input type="range" min="0" max="10" step="1" value="3"> <br>
+
+        <!-- file: 파일을 선택할 수 있는 타입(첨부파일 등) -->
+        <input type="file" name="upload"> <br> 
+
+
+
+
+
+        <!-- submit을 사용하면 form태그에 action에 지정한 값에 저장된다. -->
+        <input type="submit" value="회원가입">
+
+
+    </form>
+
+    
+</body>
+</html>
