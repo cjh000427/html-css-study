@@ -1,0 +1,155 @@
+@import url(../../common.css);
+
+body {
+    background: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    text-align: center;
+    color: white;
+    background: orange;
+}
+
+header h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+header span {
+    display: block;
+    font-size: 15px;
+    margin: 10px;
+}
+
+header h2 {
+    background: #ccc;
+    color: black;
+}
+
+/* container */
+.container {
+    background: white;
+}
+/* side-menu */
+.container .side-menu {
+    width: 25%;
+    font-weight: bold;
+    float: left;
+}
+
+.container .side-menu h3 {
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.container .side-menu ul {
+    padding: 2px 5px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.container .side-menu ul li {
+    margin: 5px;
+}
+
+.container .side-menu ul li:hover {
+    border-bottom: 1px dashed #662;
+}
+
+/* main-content */
+.container .main-content {
+    background: lightgray;
+    width: 50%;
+    float: left;
+}
+
+.main-content .art-piece {
+    margin: 10px 5px;
+}
+
+.main-content .art-piece h4 {
+    background: #123456;
+    color: white;
+    padding: 5px;
+}
+
+.main-content .art-piece h4 a:hover {
+    text-decoration: underline;
+}
+
+.main-content .art-piece .artist {
+    font-weight: bold;
+    padding: 10px 0; 
+}
+
+.main-content .art-piece .detail {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/* banner */
+.container .banner {
+    width: 25%;
+    float: left;
+}
+
+.banner h3 {
+    padding: 10px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.banner h3 .all {
+    color: gray;
+    text-decoration: underline;
+}
+
+.banner h3 .love {
+    display: block;
+    color: orange;
+    text-decoration: underline;
+}
+
+.banner h3 strong {
+    font-weight: bold;
+}
+
+.banner .link {
+    padding: 10px;
+}
+
+
+.banner .link a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.banner .link span {
+    display: block;
+    font-weight: 400;
+}
+
+
+
+footer {
+    background: #123456;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: underline;
+}
